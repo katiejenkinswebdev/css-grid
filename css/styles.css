@@ -1,3 +1,10 @@
-.wrapper {
-  background-color: blue;
+/*Color & give space to all divs inside the wrapper*/
+.wrapper > div {
+  background: #eee;
+  padding: 1em;
+}
+
+/*Color every other div in the wrapper*/
+.wrapper > div:nth-child(odd) {
+  background: #ddd;
 }
