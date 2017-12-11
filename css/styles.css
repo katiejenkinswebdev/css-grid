@@ -1,3 +1,10 @@
+/*Add display grid to wrapper class and define width of columns*/
+.wrapper {
+  display: grid;
+  grid-template-columns: 40% 30% 40%;
+}
+
+
 /*Color & give space to all divs inside the wrapper*/
 .wrapper > div {
   background: #eee;
