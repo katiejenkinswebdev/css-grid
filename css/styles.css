@@ -1,7 +1,15 @@
 /*Add display grid to wrapper class and define width of columns*/
 .wrapper {
   display: grid;
-  grid-template-columns: 40% 30% 40%;
+  grid-template-columns: 70% 30%;
+  /*Seperate columns*/
+  /*grid-column-gap: 1em;
+  /*Seperate rows*/
+  /*grid-row-gap: 1em;*/
+
+  /*If using grid columan and row gaps, use this*/
+  grid-gap: 1em;
+
 }
 
 

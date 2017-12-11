@@ -1,0 +1,22 @@
+/*Recommended to use fractional or fr to avoid issues with padding*/
+.wrapper {
+  display: grid;
+  /*grid-template-columns: 1fr 2fr 1fr;*/
+  grid-template-columns: repeat(3, 1fr 2fr);
+  grid-gap: 1em;
+  /*Set a fixed height on all the rows. Content will not fill and may spill out*/
+  /*grid-auto-rows: 100px;*/
+  /*Set a flexible height so content fills it*/
+  grid-auto-rows: minmax(100px, auto);
+
+}
+
+.wrapper > div {
+  background: #eee;
+  padding: 1em;
+}
+
+/*Color every other div in the wrapper*/
+.wrapper > div:nth-child(odd) {
+  background: #ddd;
+}
